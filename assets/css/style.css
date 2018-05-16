@@ -1,4 +1,130 @@
+
+/*
+ *
+ *css
+ *
+ */
+
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+/*
+ *
+ *General Rules
+ *
+ */
+section {
+	min-height: 100vh;
+}
+
+/*
+ *
+ *Sections
+ *
+ */
+
+section#bio {
+	position: relative;
+}
+
+section#bio,
+section#bio a {
+	background-color: lightyellow;
+	color:#0d961e;
+}
+
+section#bio > div#details > h1,
+section#bio > div#details > ul{
+	font-family: 'Bree+Serif', sans-serif;
+	color: black;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+section#bio > div#details > h1{
+	font-size: 40px;
+}
+
+section#bio > div#details > ul{
+	list-style: none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+div#details {
+	/*border: 1px solid darkgreen;*/
+	width: 50%;
+	text-align: center;
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+section > h2 {
+	font-family: 'Bree+Serif', sans-serif;
+	color: lightgray;
+}
+
+section#bio > div#details > img {
+	border-radius: 50%;
+	width: 200px;
+	border: 5px solid lightgray;
+	padding: 2px;
+}
+
+section#projects{
+	background-color:#777777;
+}
+
+section#skillset{
+	background-color:#555555;
+}
+
+section#contact{
+	background-color: #333333;
+	position: relative;
+}
+
+section#projects h2,
+section#skillset h2,
+section#contact h2 {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
 body {
 	
-	background-color: red;
+	/*background-color: #999999;*/
+	font-family: 'Dosis', sans-serif;
 }
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+ footer {
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	text-align: center;
+ 	background-color: #111111;
+ 	color: lightgray;
+ 	position: absolute;
+ 	bottom: 0;
+ 	width: 100%;
+ }
+
+ footer a {
+ 	color: lightgray;
+ }
