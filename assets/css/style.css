@@ -19,7 +19,10 @@
 section {
 	min-height: 100vh;
 }
-
+section > h2 {
+	font-family: 'Bree+Serif', sans-serif;
+	color: lightgray;
+}
 /*
  *
  *Sections
@@ -27,31 +30,67 @@ section {
  */
 
 section#bio {
+	background-color: lightyellow;
+	background-image: url(../img/bg.png);
+	background-size:cover;
+	background-position: center;
 	position: relative;
 }
-
-section#bio,
+section#bio > div {
+	background-color: rgba(207, 208, 243, 0.6);
+	width: 100%;
+	height: 100vh;
+}
 section#bio a {
-	background-color: lightyellow;
 	color:#0d961e;
 }
 
-section#bio > div#details > h1,
-section#bio > div#details > ul{
+section#bio > div > header {
+	position: relative;
+}
+section#bio > div > header > p {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+section#bio > div > header > p:last-child {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+section#bio > div > header > p > a {
+	text-decoration: none;
+}
+section#bio > div > header > p > a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+section#bio > div > div#details > h1,
+section#bio > div > div#details > ul{
 	font-family: 'Bree+Serif', sans-serif;
 	color: black;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
-section#bio > div#details > h1{
+section#bio > div > div#details > h1{
 	font-size: 40px;
 }
 
-section#bio > div#details > ul{
+section#bio > div > div#details > ul{
 	list-style: none;
 	font-size: 20px;
 	text-transform: uppercase;
+}
+section#bio > div > div#details > img {
+	border-radius: 50%;
+	width: 200px;
+	border: 5px solid lightgray;
+	padding: 2px;
+}
+section#bio > div > div#details > p {
+	line-height: 1.5;
 }
 
 div#details {
@@ -63,19 +102,6 @@ div#details {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-}
-
-
-section > h2 {
-	font-family: 'Bree+Serif', sans-serif;
-	color: lightgray;
-}
-
-section#bio > div#details > img {
-	border-radius: 50%;
-	width: 200px;
-	border: 5px solid lightgray;
-	padding: 2px;
 }
 
 section#projects{
